@@ -38,7 +38,7 @@ function App() {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    sessionStorage.getItem('accessToken')?isUserAuthenticated(true):isUserAuthenticated(false);
+    sessionStorage.getItem('accessToken')?isUserAuthenticated(true):isUserAuthenticated(false); 
     console.log('ab',sessionStorage.getItem('accessToken')?true:false)
     console.log('ba',isAuthenticated)
     const getIsAdmin = async () => {
